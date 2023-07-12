@@ -1,0 +1,9 @@
+*.pyc
+*.wav
+.ipynb_checkpoints/
+__pycache__/
+training_data/
+inference_controls/
+inference_sounds/
+labels_train/
+*.ckpt
