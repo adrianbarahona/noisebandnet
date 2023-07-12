@@ -7,3 +7,4 @@ inference_controls/
 inference_sounds/
 labels_train/
 *.ckpt
+trained_models/
