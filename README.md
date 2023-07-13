@@ -9,8 +9,7 @@
     <p>
     </p>
 </div>
-<p align="center"><img src="https://www.adrianbarahonarios.com/files/NBN/nbn_arch.png
-" width="512" /></p>
+<p align="center"><img src="https://www.adrianbarahonarios.com/files/NBN/nbn_arch.png" width="512" /></p>
 
 # **Installation**
 Please install the requirements by running:
@@ -53,8 +52,7 @@ python label_data.py --audio_path path_to_wav_file_directory --audio_name name_o
 
 The `label_data.py` tool will show an image with the training audio waveform at the top and its spectrogram at the bottom. The control parameters are defined by clicking on top of the spectrogram. To allow for a finer control, the right click removes the last added control point. Please see below for an example, where the cyan curve on top of the spectrogram is the user-defined control parameter:
 
-<p align="center"><img src="https://www.adrianbarahonarios.com/files/NBN/drill_ui.png
-" width="256" /></p>
+<p align="center"><img src="https://www.adrianbarahonarios.com/files/NBN/drill_ui.png" width="256" /></p>
 
 This will create a `feature_name.npy` file with the control parameters in a `output_directory/audio_name` directory. To train a model using this control curve, simply run:
 
