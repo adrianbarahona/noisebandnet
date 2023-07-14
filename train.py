@@ -72,9 +72,9 @@ if __name__ == '__main__':
     
 
     opt = torch.optim.Adam(synth.parameters(), lr=config.lr)
-    mrstft = auraloss.freq.MultiResolutionSTFTLoss(fft_sizes=[8192, 4096, 1024, 2048, 512, 128, 32],
-                                                hop_sizes=[8192//4, 4096//4, 1024//4, 2048//4, 512//4, 128//4, 32//4],
-                                                win_lengths=[8192, 4096, 1024, 2048, 512, 128, 32])
+    mrstft = auraloss.freq.MultiResolutionSTFTLoss(fft_sizes=[8192, 4096, 2048, 1024, 512, 128, 32],
+                                                hop_sizes=[8192//4, 4096//4, 2048//4, 1024//4, 512//4, 128//4, 32//4],
+                                                win_lengths=[8192, 4096, 2048, 1024, 512, 128, 32])
     
     
     print(f'Starting training for {config.epochs} epochs.')
