@@ -2,9 +2,8 @@
 </h1>
 <div align="center">
 
-
 <h4>
-        <a href="https://www.adrianbarahonarios.com/noisebandnet/" target="_blank">Website</a> </a>
+        <a href="https://arxiv.org/abs/2307.08007/" target="_blank">Paper</a> |  <a href="https://www.adrianbarahonarios.com/noisebandnet/" target="_blank">Website</a> </a>
     </h4>
     <p>
     </p>
