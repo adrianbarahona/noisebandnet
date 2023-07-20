@@ -14,7 +14,7 @@ def label_time_series(n):
     ax.set_ylim([0, 1])
     plt.grid()
     manager = plt.get_current_fig_manager()
-    manager.window.showMaximized()
+    manager.window.state('zoomed')
 
     points = []
     values = []
@@ -41,7 +41,7 @@ def label_time_series(n):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--n_samples', help='Number of samples to generate', default=2**14)
-    parser.add_argument('--output_directory', help='Where to put the file', default="inference_controls")
+    parser.add_argument('--output_directory', help='Where to put the file', default="inference_controls/metal")
     parser.add_argument('--feature_name', help='Name of the feature for the output file', default="control_metal_1")
 
     config = parser.parse_args()

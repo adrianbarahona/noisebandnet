@@ -8,7 +8,7 @@ def label_time_series(time_series, sampling_rate, n_fft=1024, noverlap=256):
     fig, (ax1, ax2) = plt.subplots(nrows=2)
 
     manager = plt.get_current_fig_manager()
-    manager.window.showMaximized()
+    manager.window.state('zoomed')
 
     ax1.plot(time_series, c='salmon')
     ax1.set_xlabel('Time (samples)')
