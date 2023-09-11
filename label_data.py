@@ -68,7 +68,7 @@ if __name__ == '__main__':
     parser.add_argument('--audio_name', help='Name of the training sound', default='metal')
     parser.add_argument('--output_directory', help='Where to put the file', default="labels_train")
     parser.add_argument('--feature_name', help='Name of the feature for the output file', default="control_1")
-    parser.add_argument('--sampling_rate', help='Fs of the sounds', default=44100)
+    parser.add_argument('--sampling_rate', type=int, help='Fs of the sounds', default=44100)
 
     config = parser.parse_args()
     audio_in = f'{config.audio_path}/{config.audio_name}.wav'
